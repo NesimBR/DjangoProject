@@ -1,0 +1,1 @@
+"Django Not Paylasim Projesi" 

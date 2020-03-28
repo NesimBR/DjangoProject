@@ -21,3 +21,23 @@ class Category(models.Model):
     #  bundan sonra migrate yapmamızz lazım python manage.py makemigrations note ondan sonra migrate
     def __str__(self):
         return self.title
+
+class Note(models.Model):
+    # iki amaç var burada tablo oluşturması ve adminde ayarlamak
+    STATUS = (
+        ('True', 'true'),
+        ('False', 'false')
+    )
+    #  many to one
+    Category=models.ForeignKey(Category,on_delete=models.CASCADE)
+    title = models.CharField(max_length=30)
+    description = models.CharField(max_length=255)
+    keywords = models.CharField(max_length=255)
+    detail = models.CharField(max_length=255)
+    status = models.TextField(max_length=10, choices= STATUS)
+    image = models.ImageField(blank=True, upload_to='image/')
+    create_at = models.DateTimeField(auto_now_add=True)
+    update_at = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return self.title

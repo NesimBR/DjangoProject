@@ -10,19 +10,22 @@ class NoteImageInline(admin.TabularInline):
 
 
 class CategoryAdmin(admin.ModelAdmin):
-    list_display = ['title', 'status']
+    list_display = ['title', 'image_tag', 'status']
+    readonly_fields = ('image_tag',)
     list_filter = ['status']
 
 
 class NoteAdmin(admin.ModelAdmin):
-    list_display = ['title', 'Category', 'create_at', 'status']
+    list_display = ['title', 'Category', 'image_tag', 'create_at', 'status']
+    readonly_fields = ('image_tag',)
     list_filter = ['status', 'Category']
     inlines = [NoteImageInline]
 
 
-class ImagesAdmin(admin.ModelAdmin):
-    list_display = ['title', 'note', 'image']
 
+class ImagesAdmin(admin.ModelAdmin):
+    list_display = ['title', 'note', 'image_tag']
+    readonly_fields = ('image_tag',)
 
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(Note, NoteAdmin)

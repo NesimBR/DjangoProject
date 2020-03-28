@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75320cd5-4317-4c02-8b9e-4abb1130244a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/note/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/note/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/note/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/note/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,14 +83,30 @@
       <updated>1583777812189</updated>
       <workItem from="1583777816689" duration="4923000" />
       <workItem from="1583932064440" duration="42000" />
-      <workItem from="1585343617996" duration="12311000" />
+      <workItem from="1585343617996" duration="13692000" />
     </task>
+    <task id="LOCAL-00001" summary="Creating an admin user + Adding Category,Note tables">
+      <created>1585409384602</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1585409384602</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Creating an admin user + Adding Category,Note tables" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creating an admin user + Adding Category,Note tables" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="393" y="12" key="CommitChangelistDialog2" timestamp="1585409383916">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="393" y="12" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1585409383916" />
     <state x="548" y="159" key="FileChooserDialogImpl" timestamp="1583786890287">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

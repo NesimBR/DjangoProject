@@ -8,7 +8,7 @@ class Category(models.Model):
         ('True', 'true'),
         ('False', 'false')
     )
-    title = models.CharField(max_length=30)
+    title = models.CharField(max_length=70)
     description = models.CharField(max_length=255)
     keywords = models.CharField(max_length=255)
     status = models.CharField(max_length=10, choices= STATUS)
@@ -30,7 +30,7 @@ class Note(models.Model):
     )
     #  many to one
     Category=models.ForeignKey(Category,on_delete=models.CASCADE)
-    title = models.CharField(max_length=30)
+    title = models.CharField(max_length=100)
     description = models.CharField(max_length=255)
     keywords = models.CharField(max_length=255)
     detail = models.CharField(max_length=255)
@@ -39,5 +39,12 @@ class Note(models.Model):
     create_at = models.DateTimeField(auto_now_add=True)
     update_at = models.DateTimeField(auto_now=True)
 
+    def __str__(self):
+        return self.title
+
+class Images(models.Model):
+    note = models.ForeignKey(Note,on_delete=models.CASCADE)
+    title = models.CharField(max_length=50,blank=True)
+    image = models.ImageField(blank=True, upload_to='image/')
     def __str__(self):
         return self.title

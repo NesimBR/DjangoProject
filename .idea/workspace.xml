@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="75320cd5-4317-4c02-8b9e-4abb1130244a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/note/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/note/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/note/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/note/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +25,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="MERGE" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="1Yu1ktN3BpI89QWwSsSex4oL2Sd" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -83,7 +85,8 @@
       <updated>1583777812189</updated>
       <workItem from="1583777816689" duration="4923000" />
       <workItem from="1583932064440" duration="42000" />
-      <workItem from="1585343617996" duration="22539000" />
+      <workItem from="1585343617996" duration="23424000" />
+      <workItem from="1585427644296" duration="1959000" />
     </task>
     <task id="LOCAL-00001" summary="Creating an admin user + Adding Category,Note tables">
       <created>1585409384602</created>
@@ -103,6 +106,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Creating an admin user + Adding Category,Note tables" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="134" y="139" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585427661204">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="134" y="139" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1585427661204" />
     <state x="393" y="12" key="CommitChangelistDialog2" timestamp="1585409383916">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -115,13 +122,13 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="277" y="60" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1583787330458" />
-    <state x="465" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1583932065127">
+    <state x="465" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1585427649819">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="465" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1583932065127" />
-    <state x="578" y="334" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585409272611">
+    <state x="465" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1585427649819" />
+    <state x="578" y="334" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585427678149">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="578" y="334" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834@0.0.1536.834" timestamp="1585409272611" />
+    <state x="578" y="334" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834@0.0.1536.834" timestamp="1585427678149" />
   </component>
 </project>

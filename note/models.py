@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 from django.utils.safestring import mark_safe
-
+from ckeditor_uploader.fields import RichTextUploadingField
 
 class Category(models.Model):
     # iki amaç var burada tablo oluşturması ve adminde ayarlamak
@@ -43,7 +43,7 @@ class Note(models.Model):
     title = models.CharField(max_length=100)
     description = models.CharField(max_length=255)
     keywords = models.CharField(max_length=255)
-    detail = models.TextField()
+    detail = RichTextUploadingField()
     status = models.CharField(max_length=10, choices=STATUS)
     image = models.ImageField(blank=True, upload_to='image/')
     create_at = models.DateTimeField(auto_now_add=True)

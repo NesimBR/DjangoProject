@@ -1,0 +1,47 @@
+{% extends "homebase.html" %}
+{% block title %}About Us {{ setting.company }}{% endblock %}
+{% block keywords %}{{ setting.keywords }}{% endblock %}
+{% block description %}{{ setting.description }}{% endblock %}
+{% block head %}
+    <link rel='shortcut icon' type='image/x-icon' href='{{ setting.icon.url }}' />
+{% endblock %}
+{% block body %}
+
+
+    <section id="inner-headline">
+        <div class="container">
+            <div class="row">
+                <div class="span4">
+                    <div class="inner-heading">
+                        <h2>About us</h2>
+                    </div>
+                </div>
+                <div class="span8">
+                    <ul class="breadcrumb">
+                        <li><a href="#"><i class="icon-home"></i></a><i class="icon-angle-right"></i></li>
+                        <li class="active">About us</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="content">
+        <div class="container">
+            <div class="row">
+
+                {{ setting.aboutus|safe }}
+
+            </div>
+            <!-- divider -->
+            <div class="row">
+                <div class="span12">
+                    <div class="solidline">
+                    </div>
+                </div>
+            </div>
+            <!-- end divider -->
+        </div>
+    </section>
+
+
+{% endblock %}

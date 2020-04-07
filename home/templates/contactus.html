@@ -8,18 +8,19 @@
 {% block body %}
 
 
+    <!-- end header -->
     <section id="inner-headline">
         <div class="container">
             <div class="row">
                 <div class="span4">
                     <div class="inner-heading">
-                        <h2>Contact</h2>
+                        <h2>Get in touch</h2>
                     </div>
                 </div>
                 <div class="span8">
                     <ul class="breadcrumb">
                         <li><a href="#"><i class="icon-home"></i></a><i class="icon-angle-right"></i></li>
-                        <li class="active">Contact/li>
+                        <li class="active">Contact</li>
                     </ul>
                 </div>
             </div>
@@ -28,20 +29,45 @@
     <section id="content">
         <div class="container">
             <div class="row">
+                <div class="span4">
+                    <aside class="left-sidebar">
+                        <div class="widget">
+                            <h5 class="widgetheading">Contact Form</h5>
+                            {% if messages %}
+                                {% for message in messages %}
+                                    <div id=" sendmessage " class="alert alert-{{ message.tags }}" ROLE="alert">
+                                        {{ message }}
+                                    </div>
+                                {% endfor %}
+                            {% endif %}
 
-                {{ setting.contactus |safe }}
+                            <form action="" method="post">
+                                {% csrf_token %}
+                                {{ form.as_p }}
+                                <input class="btn btn-large btn-theme margintop10 form-group span3" type="submit" value="Submit message">
 
-            </div>
-            <!-- divider -->
-            <div class="row">
-                <div class="span12">
-                    <div class="solidline">
-                    </div>
+                            </form>
+                        </div>
+                    </aside>
                 </div>
+            <div class="span8" >
+                <article>
+                    <div class="top-wrapper">
+                        <div class="post-heading">
+                          <h3><a>Contact Informations</a></h3>
+                        </div>
+                    </div>
+                    <div class="row" style="padding: 20px;">
+                         {{ setting.contactus |safe }}
+                    </div>
+                </article>
+
             </div>
-            <!-- end divider -->
+
+         </div>
         </div>
     </section>
+
 
 
 {% endblock %}

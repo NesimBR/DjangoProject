@@ -43,6 +43,7 @@ class Note(models.Model):
     title = models.CharField(max_length=100)
     description = models.CharField(max_length=255)
     keywords = models.CharField(max_length=255)
+    slug = models.SlugField(blank=True,max_length=100)
     detail = RichTextUploadingField()
     status = models.CharField(max_length=10, choices=STATUS)
     image = models.ImageField(blank=True, upload_to='image/')

@@ -3,7 +3,17 @@
 {% block keywords %}{{ setting.keywords }}{% endblock %}
 {% block description %}{{ setting.description }}{% endblock %}
 {% block head %}
-<link rel='shortcut icon' type='image/x-icon' href='{{ setting.icon.url }}' />
+    <link rel='shortcut icon' type='image/x-icon' href='{{ setting.icon.url }}' />
 {% endblock %}
-{% block slider %}{% include 'slider.html' %}{% endblock %}
+{% block slider %}
+    <div class="row" style="margin-bottom:-50px;">
+        <div class="container" style="margin-bottom=5px;">
+            <div class="row">
+
+                {% include 'sidebar.html' %}
+                {% include 'slider2.html' %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
 {% block body %}{% include 'content.html' %}{% endblock %}

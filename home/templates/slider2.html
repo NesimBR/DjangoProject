@@ -1,0 +1,40 @@
+{% load static %}
+<div class="row" >
+    <div class="span10">
+        <!-- Slider -->
+        <div id="nivo-slider" >
+            <div class="nivo-slider" >
+
+                 {% for rs in sliderdata %}
+                <!-- Slide #1 image -->
+                <img src="{{ rs.image.url }} " alt="" title="#caption-{{ rs.id }}" style="max-height:450px;" />
+               {% endfor %}
+
+
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="span12">
+
+
+                        {% for k in sliderdata %}
+                        <!-- Slide #1 caption -->
+                        <div class="nivo-caption" id="caption-{{ k.id }}">
+                            <div>
+                                <h2>{{ k.title }}</h2>
+                                <p>{{ k.description }}</p>
+                                <a href="/note/{{ k.id }}/{{ k.slug }}" class="btn btn-theme">Read More</a>
+                            </div>
+                        </div>
+
+                        {% endfor %}
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end slider -->
+
+    </div>
+
+</div>

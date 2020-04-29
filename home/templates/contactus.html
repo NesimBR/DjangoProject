@@ -2,71 +2,72 @@
 {% block title %}References{% endblock %}
 {% block keywords %}{{ setting.keywords }}{% endblock %}
 {% block description %}{{ setting.description }}{% endblock %}
-{% block head %}
-    <link rel='shortcut icon' type='image/x-icon' href='{{ setting.icon.url }}' />
-{% endblock %}
 {% block body %}
-
-
-    <!-- end header -->
-    <section id="inner-headline">
-        <div class="container">
-            <div class="row">
-                <div class="span4">
-                    <div class="inner-heading">
-                        <h2>Get in touch</h2>
+     <div id="all">
+        <div id="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!-- breadcrumb-->
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                                <li aria-current="page" class="breadcrumb-item active">Contact</li>
+                            </ol>
+                        </nav>
                     </div>
-                </div>
-                <div class="span8">
-                    <ul class="breadcrumb">
-                        <li><a href="#"><i class="icon-home"></i></a><i class="icon-angle-right"></i></li>
-                        <li class="active">Contact</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="content">
-        <div class="container">
-            <div class="row">
-                <div class="span4">
-                    <aside class="left-sidebar">
-                        <div class="widget">
-                            <h5 class="widgetheading">Contact Form</h5>
-                            {% if messages %}
+
+                    <div class="col-lg-6">
+
+                        <div class="card sidebar-menu">
+                            <div class="card-header">
+                                <h3 class="h4 card-title">Contact form</h3>
+                            </div>
+                            <div class="card-body">
+                                {% if messages %}
                                 {% for message in messages %}
                                     <div id=" sendmessage " class="alert alert-{{ message.tags }}" ROLE="alert">
                                         {{ message }}
                                     </div>
                                 {% endfor %}
                             {% endif %}
-
-                            <form action="" method="post">
+                                <form action="" method="post">
                                 {% csrf_token %}
                                 {{ form.as_p }}
-                                <input class="btn btn-large btn-theme margintop10 form-group span3" type="submit" value="Submit message">
-
+                                 <button class="btn btn-primary" type="submit"><i class="fa fa-envelope-o"></i> Send message</button>
                             </form>
+
+                            </div>
                         </div>
-                    </aside>
+                    </div>
+                    <div class="col-lg-6">
+                        <div id="text-page"  class="box">
+
+                            <h1><a>Contact</a></h1>
+                            <p class="lead">Are you curious about something? Do you have some kind of problem with our products?</p>
+                            <p>Please feel free to contact us, our customer service center is working for you 24/7.</p>
+                            <hr>
+
+                               {{ setting.contactus |safe }}
+
+
+                            <hr>
+                            <h4 class="mb-3">Stay in touch</h4>
+                            <p class="social">
+                                <a href="https://www.facebook.com/{{setting.facebook}}" class="facebook external"><i class="fa fa-facebook"></i></a>
+                                <a href="https://twitter.com/{{setting.twitter}}" class="twitter external"><i class="fa fa-twitter"></i></a>
+                                <a href="https://www.instagram.com/{{setting.instagram}}" class="instagram external"><i class="fa fa-instagram"></i></a></p>
+
+                        </div>
+                    </div>
+
                 </div>
-            <div class="span8" >
-                <article>
-                    <div class="top-wrapper">
-                        <div class="post-heading">
-                          <h3><a>Contact Informations</a></h3>
-                        </div>
-                    </div>
-                    <div class="row" style="padding: 20px;">
-                         {{ setting.contactus |safe }}
-                    </div>
-                </article>
-
             </div>
-
-         </div>
         </div>
-    </section>
+    </div>
+
+
+
 
 
 

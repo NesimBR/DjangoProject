@@ -3,10 +3,306 @@
   <component name="ChangeListManager">
     <list default="true" id="75320cd5-4317-4c02-8b9e-4abb1130244a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/Readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/animations.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/blog-left-sidebar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/blog-right-sidebar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/components.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/contact.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/contactform/Readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/contactform/contactform.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/css/animate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/css/bootstrap-responsive.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/css/cslider.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/css/custom-fonts.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/css/fancybox/blank.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/css/fancybox/fancybox_loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/css/fancybox/fancybox_overlay.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/css/fancybox/fancybox_sprite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/css/fancybox/jquery.fancybox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/css/flexslider.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/css/font-awesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/css/jcarousel.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/css/overwrite.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/css/slitslider.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/font/customicon/Icons.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/font/customicon/Icons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/font/customicon/Icons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/font/customicon/Icons.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/font/fontawesome/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/font/fontawesome/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/font/fontawesome/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/font/fontawesome/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/font/fontawesome/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/icon-variations.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/icons.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/avatar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/bodybg/bg1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/bodybg/bg10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/bodybg/bg2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/bodybg/bg3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/bodybg/bg4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/bodybg/bg5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/bodybg/bg6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/bodybg/bg7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/bodybg/bg8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/bodybg/bg9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/dummies/blog/65x65/thumb1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/dummies/blog/65x65/thumb2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/dummies/blog/65x65/thumb3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/dummies/blog/img1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/dummies/blog/img2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/dummies/blog/img3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/dummies/blog/thumbs/img1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/dummies/blog/thumbs/img2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/dummies/blog/thumbs/img3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/dummies/blog/thumbs/img4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/dummies/blog/thumbs/no-thumb.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/dummies/blog/thumbs/quote-thumb.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/dummies/blog/thumbs/small1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/dummies/clients/client1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/dummies/clients/client2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/dummies/clients/client3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/dummies/clients/client4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/dummies/clients/client5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/dummies/clients/client6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/dummies/dummy-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/dummies/team1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/dummies/team2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/dummies/team3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/dummies/team4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/dummies/testimonial-author1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/glyphicons-halflings-white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/glyphicons-halflings.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/nivo-bullets.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/slides/nivo/bg-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/slides/nivo/bg-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/slides/nivo/bg-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/slides/parallax/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/slides/parallax/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/slides/parallax/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/slides/parallax/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/slides/parallax/arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/slides/parallax/bg1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/slides/slitslider/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/slides/slitslider/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/slides/slitslider/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/slides/slitslider/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/slides/slitslider/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/works/full/image-01-full.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/works/full/image-02-full.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/works/full/image-03-full.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/works/full/image-04-full.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/works/full/image-05-full.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/works/full/image-06-full.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/works/full/image-07-full.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/works/full/image-08-full.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/works/thumbs/image-01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/works/thumbs/image-02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/works/thumbs/image-03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/works/thumbs/image-04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/works/thumbs/image-05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/works/thumbs/image-06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/works/thumbs/image-07.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/img/works/thumbs/image-08.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/index-alt2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/index-alt3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/js/animate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/js/custom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/js/google-code-prettify/prettify.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/js/google-code-prettify/prettify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/js/jcarousel/jquery.jcarousel.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/js/jcarousel/setting.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/js/jquery.ba-cond.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/js/jquery.cookie.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/js/jquery.cslider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/js/jquery.easing.1.3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/js/jquery.fancybox-media.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/js/jquery.fancybox.pack.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/js/jquery.flexslider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/js/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/js/jquery.nivo.slider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/js/jquery.slitslider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/js/modernizr.custom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/js/portfolio/jquery.quicksand.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/js/portfolio/setting.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/js/quicksand/jquery.quicksand.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/js/quicksand/setting.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/portfolio-2cols.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/portfolio-3cols.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/portfolio-4cols.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/portfolio-detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/post-left-sidebar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/post-right-sidebar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/pricingbox.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/skins/blue.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/skins/default.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/skins/green.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/skins/kissme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/skins/lime.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/skins/pink.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/skins/red.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/skins/rose.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/skins/sand.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/skins/yellow.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/table.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/testimonials.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/Flattern/typography.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/contactform/Readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/contactform/contactform.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/css/animate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/css/bootstrap-responsive.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/css/cslider.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/css/custom-fonts.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/css/fancybox/blank.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/css/fancybox/fancybox_loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/css/fancybox/fancybox_overlay.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/css/fancybox/fancybox_sprite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/css/fancybox/jquery.fancybox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/css/flexslider.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/css/font-awesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/css/jcarousel.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/css/overwrite.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/css/slitslider.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/font/customicon/Icons.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/font/customicon/Icons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/font/customicon/Icons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/font/customicon/Icons.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/font/fontawesome/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/font/fontawesome/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/font/fontawesome/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/font/fontawesome/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/font/fontawesome/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/avatar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/bodybg/bg1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/bodybg/bg10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/bodybg/bg2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/bodybg/bg3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/bodybg/bg4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/bodybg/bg5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/bodybg/bg6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/bodybg/bg7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/bodybg/bg8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/bodybg/bg9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/dummies/blog/65x65/thumb1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/dummies/blog/65x65/thumb2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/dummies/blog/65x65/thumb3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/dummies/blog/img1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/dummies/blog/img2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/dummies/blog/img3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/dummies/blog/thumbs/img1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/dummies/blog/thumbs/img2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/dummies/blog/thumbs/img3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/dummies/blog/thumbs/img4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/dummies/blog/thumbs/no-thumb.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/dummies/blog/thumbs/quote-thumb.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/dummies/blog/thumbs/small1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/dummies/clients/client1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/dummies/clients/client2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/dummies/clients/client3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/dummies/clients/client4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/dummies/clients/client5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/dummies/clients/client6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/dummies/dummy-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/dummies/team1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/dummies/team2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/dummies/team3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/dummies/team4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/dummies/testimonial-author1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/glyphicons-halflings-white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/glyphicons-halflings.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/nivo-bullets.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/slides/nivo/bg-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/slides/nivo/bg-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/slides/nivo/bg-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/slides/parallax/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/slides/parallax/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/slides/parallax/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/slides/parallax/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/slides/parallax/arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/slides/parallax/bg1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/slides/slitslider/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/slides/slitslider/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/slides/slitslider/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/slides/slitslider/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/slides/slitslider/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/works/full/image-01-full.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/works/full/image-02-full.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/works/full/image-03-full.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/works/full/image-04-full.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/works/full/image-05-full.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/works/full/image-06-full.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/works/full/image-07-full.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/works/full/image-08-full.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/works/thumbs/image-01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/works/thumbs/image-02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/works/thumbs/image-03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/works/thumbs/image-04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/works/thumbs/image-05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/works/thumbs/image-06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/works/thumbs/image-07.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/img/works/thumbs/image-08.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/js/animate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/js/custom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/js/google-code-prettify/prettify.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/js/google-code-prettify/prettify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/js/jcarousel/jquery.jcarousel.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/js/jcarousel/setting.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/js/jquery.ba-cond.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/js/jquery.cookie.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/js/jquery.cslider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/js/jquery.easing.1.3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/js/jquery.fancybox-media.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/js/jquery.fancybox.pack.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/js/jquery.flexslider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/js/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/js/jquery.nivo.slider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/js/jquery.slitslider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/js/modernizr.custom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/js/portfolio/jquery.quicksand.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/js/portfolio/setting.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/js/quicksand/jquery.quicksand.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/js/quicksand/setting.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/skins/blue.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/skins/default.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/skins/green.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/skins/kissme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/skins/lime.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/skins/pink.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/skins/red.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/skins/rose.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/skins/sand.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/skins/yellow.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/aboutus.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/aboutus.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/contactus.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/contactus.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/content.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/content.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/homebase.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/homebase.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/javascript.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/javascript.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/references.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/references.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/sidebar.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/templates/slider.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/slider.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/slider2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/top_erea.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/note/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/note/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/note/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/note/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -93,7 +389,7 @@
       <workItem from="1585770470589" duration="8630000" />
       <workItem from="1586107320178" duration="47349000" />
       <workItem from="1587478628908" duration="818000" />
-      <workItem from="1588023208883" duration="3270000" />
+      <workItem from="1588023208883" duration="33609000" />
     </task>
     <task id="LOCAL-00001" summary="Creating an admin user + Adding Category,Note tables">
       <created>1585409384602</created>
@@ -137,16 +433,5 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="578" y="334" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834@0.0.1536.834" timestamp="1585427678149" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="django-line">
-          <url>file://$PROJECT_DIR$/home/templates/slider2.html</url>
-          <line>7</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

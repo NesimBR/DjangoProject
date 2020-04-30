@@ -5,31 +5,36 @@
             <div class="col-lg-3 col-md-6">
                 <h4 class="mb-3">Pages</h4>
                 <ul class="list-unstyled">
-                    <li><a href="/about">About us</a></li>
+                    <li><a href="/aboutus">About us</a></li>
                     <li><a href="#">Terms and conditions</a></li>
-                    <li><a href="/contact">Contact us</a></li>
+                    <li><a href="/contactus">Contact us</a></li>
                 </ul>
                 <hr>
                 <h4 class="mb-3">User section</h4>
                 <ul class="list-unstyled">
                     <li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a></li>
-                    <li><a href="register.html">Regiter</a></li>
+                    <li><a href="#">Regiter</a></li>
                 </ul>
             </div>
             <!-- /.col-lg-3-->
             <div class="col-lg-3 col-md-6">
                 <h4 class="mb-3">Top categories</h4>
-                <ul class="list-unstyled">
-                    <li><a href="/category/1"> <h5>City Compact</h5></a></li>
-                    <li><a href="/category/2"> <h5>Beetle</h5></a></li>
-                    <li><a href="/category/3"> <h5>Pickup Truck</h5></a></li>
-                    <li><a href="/category/4"> <h5>Van</h5></a></li>
-                    <li><a href="/category/5"> <h5>Sport Car</h5></a></li>
-                    <li><a href="/category/6"> <h5>Convertible</h5></a></li>
-                    <li><a href="/category/7"> <h5>SUV</h5></a></li>
-                    <li><a href="/category/8"> <h5>Mini Van</h5></a></li>
-                    <li><a href="/category/9"> <h5>Sedan</h5></a></li>
-                </ul>
+               <ul class="nav nav-pills flex-column category-menu">
+            {% load mptt_tags %}
+            {% recursetree category %}
+                <li><a class="nav-link" >{{ node.title }}</a>
+                    <ul class="list-unstyled">
+                        {% if not node.is_leaf_node %}
+                            {% for i in node.children.all %}
+                                <li><a class="nav-link" href="/category/{{ i.id }}/{{ i.slug }}"> > {{ i.title }}</a></li>
+                            {% endfor %}
+
+                        {% endif %}
+                    </ul>
+                </li>
+            {% endrecursetree %}
+
+        </ul>
             </div>
             <!-- /.col-lg-3-->
             <div class="col-lg-3 col-md-6">

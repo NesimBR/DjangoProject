@@ -7,7 +7,7 @@
                         {% for rs in sliderdata %}
                         <div class="item">
                             <div style="position: relative;">
-                                <a href="/note/{{ k.id }}/{{ k.slug }}">
+                                <a href="/note/{{ rs.id }}/{{ rs.slug }}">
                                     <img src="{{ rs.image.url }}" alt="{{ rs.title }}" class="img-fluid" style="width: 1200px;height: 563px;" ></a>
                                 <div style="position: absolute;bottom: 20px;left: 20px;background-color: black;color: white;padding-left: 20px; padding-right: 20px;">
                                     <h4>{{ rs.title }}</h4>

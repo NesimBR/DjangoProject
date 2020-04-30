@@ -72,7 +72,7 @@
                                             <ul class="list-unstyled mb-3">
                                                 {% if not node.is_leaf_node %}
                                                     {% for i in node.children.all %}
-                                                        <li class="nav-item"><a href="category/{{ i.slug }}" class="nav-link"> {{ i.title }}</a></li>
+                                                        <li class="nav-item"><a href="/category/{{ i.id }}/{{ i.slug }}" class="nav-link"> {{ i.title }}</a></li>
 
                                                     {% endfor %}
 

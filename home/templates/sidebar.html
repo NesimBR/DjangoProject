@@ -1,0 +1,23 @@
+<div class="card sidebar-menu mb-4">
+    <div class="card-header">
+        <h3 class="h4 card-title">Categories</h3>
+    </div>
+    <div class="card-body">
+        <ul class="nav nav-pills flex-column category-menu">
+            {% load mptt_tags %}
+            {% recursetree category %}
+                <li><a class="nav-link" >{{ node.title }}</a>
+                    <ul class="list-unstyled">
+                        {% if not node.is_leaf_node %}
+                            {% for i in node.children.all %}
+                                <li><a class="nav-link" href="/category/{{ i.id }}/{{ i.slug }}">{{ i.title }}</a></li>
+                            {% endfor %}
+
+                        {% endif %}
+                    </ul>
+                </li>
+            {% endrecursetree %}
+
+        </ul>
+    </div>
+</div>

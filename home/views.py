@@ -2,7 +2,6 @@ from django.contrib import messages
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
 
-
 # Create your views here.
 from home.models import Setting, Contactform, ContactFormu
 from note.models import Note, Category
@@ -11,21 +10,24 @@ from note.models import Note, Category
 def index(request):
     setting = Setting.objects.get(pk=1)
     sliderdata = Note.objects.all()[:4]
-    category=Category.objects.all()
-    context = {'setting': setting, 'category': category,'page': 'home', 'sliderdata': sliderdata}
+    category = Category.objects.all()
+    context = {'setting': setting, 'category': category, 'page': 'home', 'sliderdata': sliderdata}
     return render(request, 'index.html', context)
 
 
 def aboutus(request):
     setting = Setting.objects.get(pk=1)
-    context = {'setting': setting}
+    category = Category.objects.all()
+    context = {'setting': setting, 'category': category}
     return render(request, 'aboutus.html', context)
 
 
 def references(request):
     setting = Setting.objects.get(pk=1)
-    context = {'setting': setting}
+    category = Category.objects.all()
+    context = {'setting': setting, 'category': category}
     return render(request, 'references.html', context)
+
 
 def contactus(request):
     if request.method == 'POST':
@@ -42,5 +44,14 @@ def contactus(request):
             return HttpResponseRedirect('/contactus')
     setting = Setting.objects.get(pk=1)
     form = ContactFormu()
-    context = {'setting': setting, 'form': form}
+    category = Category.objects.all()
+    context = {'setting': setting, 'form': form, 'category': category}
     return render(request, 'contactus.html', context)
+
+
+def category_notes(request, id, slug):
+    notes = Note.objects.filter(Category_id=id)
+    category = Category.objects.all()
+    categorydata=Category.objects.get(pk=id)
+    context = {'notes': notes, 'category': category, 'categorydata':categorydata}
+    return render(request, 'notes.html', context)

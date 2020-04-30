@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="75320cd5-4317-4c02-8b9e-4abb1130244a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +92,7 @@
       <workItem from="1587478628908" duration="818000" />
       <workItem from="1588023208883" duration="34101000" />
       <workItem from="1588201198020" duration="7537000" />
-      <workItem from="1588254294804" duration="3349000" />
+      <workItem from="1588254294804" duration="13896000" />
     </task>
     <task id="LOCAL-00001" summary="Creating an admin user + Adding Category,Note tables">
       <created>1585409384602</created>

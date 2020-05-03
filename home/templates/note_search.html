@@ -1,5 +1,5 @@
 {% extends "homebase.html" %}
-{% block title %}Notes Search Results{% endblock %}
+{% block title %} {{ query }} results{% endblock %}
 {% block keywords %}{{ setting.keywords }}{% endblock %}
 {% block description %}{{ setting.description }}{% endblock %}
 {% block body %}
@@ -12,7 +12,7 @@
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="/">Home</a></li>
-                                <li aria-current="page" class="breadcrumb-item active">Search</li>
+                                <li aria-current="page" class="breadcrumb-item active">{{ query }} results</li>
                             </ol>
                         </nav>
                     </div>

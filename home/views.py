@@ -1,3 +1,5 @@
+import json
+
 from django.contrib import messages
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
@@ -81,10 +83,30 @@ def note_search(request):
         if form.is_valid():
             category = Category.objects.all()
             query = form.cleaned_data['query']
-            notes = Note.objects.filter(title__icontains=query) # Select * from note where title like %query%
-            context = {'notes':notes,
-                       'category':category,
+            catid = form.cleaned_data['catid']
+            if catid == 0:
+                notes = Note.objects.filter(title__icontains=query)  # Select * from note where title like %query%
+            else:
+                notes = Note.objects.filter(title__icontains=query, Category_id=catid)   # Select * from note where title like %query%
+            context = {'notes': notes,
+                       'category': category,
+                       'query': query
                        }
             return render(request,'note_search.html',context)
-
     return HttpResponseRedirect('/')
+
+
+def search_auto(request):
+    if request.is_ajax():
+        q = request.GET.get('term', '')
+        notes = Note.objects.filter(title__icontains=q)
+        results = []
+        for rs in notes:
+            note_json = {}
+            note_json = rs.title
+            results.append(note_json)
+        data = json.dumps(results)
+    else:
+        data = 'fail'
+    mimetype = 'application/json'
+    return HttpResponse(data, mimetype)

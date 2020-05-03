@@ -4,6 +4,7 @@ from django.db import models
 
 # Create your models here.
 from django.forms import ModelForm
+from django.urls import reverse
 from django.utils.safestring import mark_safe
 from ckeditor_uploader.fields import RichTextUploadingField
 from mptt.fields import TreeForeignKey
@@ -20,14 +21,14 @@ class Category(MPTTModel):
     keywords = models.CharField(blank=True,max_length=255)
     status = models.CharField(max_length=10, choices=STATUS)
     image = models.ImageField(blank=True, upload_to='image/')
-    slug = models.SlugField()
+    slug = models.SlugField(blank=False,unique=True)
     parent = TreeForeignKey('self', blank=True, null=True, related_name='children', on_delete=models.CASCADE)  # cascad silme işleminde ona bağlı şeylerde silinir
     create_at = models.DateTimeField(auto_now_add=True)
     update_at = models.DateTimeField(auto_now=True)
 
     class MPTTMeta:
         order_insertion_by = ['title']
-    #  python manage.py makemigrations note ondan sonra migrate
+    #  python manage.py makemigrations note sonra migrate
     def __str__(self):
         full_path=[self.title]
         k = self.parent
@@ -41,6 +42,9 @@ class Category(MPTTModel):
 
     image_tag.short_description = 'Image'
 
+    def get_absolute_url(self):
+        return reverse('category_detail', kwargs={'slug': self.slug})
+
 
 class Note(models.Model):
     STATUS = (
@@ -52,7 +56,7 @@ class Note(models.Model):
     title = models.CharField(blank=True,max_length=100)
     description = models.CharField(blank=True,max_length=255)
     keywords = models.CharField(blank=True,max_length=255)
-    slug = models.SlugField(blank=True,max_length=100)
+    slug = models.SlugField(blank=False,unique=True)
     detail = RichTextUploadingField()
     status = models.CharField(max_length=10, choices=STATUS)
     image = models.ImageField(blank=True, upload_to='image/')
@@ -66,6 +70,9 @@ class Note(models.Model):
         return mark_safe('<img src="{}" height="50"/>'.format(self.image.url))
 
     image_tag.short_description = 'Image'
+
+    def get_absolute_url(self):
+        return reverse('note_detail', kwargs={'slug': self.slug})
 
 
 class Images(models.Model):

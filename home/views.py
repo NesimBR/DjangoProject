@@ -3,6 +3,7 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
 
 # Create your views here.
+from home.forms import SearchForm
 from home.models import Setting, Contactform, ContactFormu
 from note.models import Note, Category, Images, Comment
 
@@ -72,4 +73,18 @@ def note_detail(request, id, slug):
     images = Images.objects.filter(note_id=id)
     comments = Comment.objects.filter(note_id=id,status='True')
     context = {'category': category, 'comments':comments, 'note': note, 'images': images}
-    return render(request, 'note_detail.html',context)
+    return render(request, 'note_detail.html', context)
+
+def note_search(request):
+    if request.method == 'POST':
+        form = SearchForm(request.POST)
+        if form.is_valid():
+            category = Category.objects.all()
+            query = form.cleaned_data['query']
+            notes = Note.objects.filter(title__icontains=query) # Select * from note where title like %query%
+            context = {'notes':notes,
+                       'category':category,
+                       }
+            return render(request,'note_search.html',context)
+
+    return HttpResponseRedirect('/')

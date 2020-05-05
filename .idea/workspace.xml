@@ -4,8 +4,9 @@
     <list default="true" id="75320cd5-4317-4c02-8b9e-4abb1130244a" name="Default Changelist" comment="Creating an admin user + Adding Category,Note tables">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,11 +55,13 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/home/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/user/templates" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Django\mysite\user\templates" />
+      <recent name="C:\Django\mysite\user" />
       <recent name="C:\Django\mysite\home\templates" />
       <recent name="C:\Django\mysite\home" />
       <recent name="C:\Django\mysite\note" />
@@ -112,7 +115,9 @@
       <workItem from="1588343432413" duration="13187000" />
       <workItem from="1588461959708" duration="9338000" />
       <workItem from="1588519917991" duration="14959000" />
-      <workItem from="1588603790042" duration="5423000" />
+      <workItem from="1588603790042" duration="5580000" />
+      <workItem from="1588642090346" duration="4057000" />
+      <workItem from="1588646192349" duration="2779000" />
     </task>
     <task id="LOCAL-00001" summary="Creating an admin user + Adding Category,Note tables">
       <created>1585409384602</created>
@@ -148,10 +153,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="277" y="60" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1583787330458" />
-    <state x="465" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1588603789974">
+    <state x="465" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1588646192360">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="465" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1588603789974" />
+    <state x="465" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1588646192360" />
     <state x="578" y="334" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588278960019">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

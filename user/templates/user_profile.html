@@ -1,5 +1,7 @@
 {% extends "homebase.html" %}
 {% block title %}{{ profile.user_name}}{% endblock %}
+{% block keywords %}{{ setting.keywords }}{% endblock %}
+{% block description %}{{ setting.description }}{% endblock %}
 
 {% block body %}
     <div id="all" xmlns="http://www.w3.org/1999/html">

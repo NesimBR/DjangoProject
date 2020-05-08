@@ -4,8 +4,11 @@
     <list default="true" id="75320cd5-4317-4c02-8b9e-4abb1130244a" name="Default Changelist" comment="Creating an admin user + Adding Category,Note tables">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/tab.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/tab.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/templates/change_password.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/templates/change_password.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/templates/user_menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/templates/user_menu.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/templates/user_profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/templates/user_profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/templates/user_update.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/templates/user_update.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/views.py" afterDir="false" />
     </list>
@@ -123,7 +126,8 @@
       <workItem from="1588642090346" duration="4057000" />
       <workItem from="1588646192349" duration="3092000" />
       <workItem from="1588705785914" duration="3490000" />
-      <workItem from="1588729514935" duration="8549000" />
+      <workItem from="1588729514935" duration="9181000" />
+      <workItem from="1588902474669" duration="4742000" />
     </task>
     <task id="LOCAL-00001" summary="Creating an admin user + Adding Category,Note tables">
       <created>1585409384602</created>
@@ -159,10 +163,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="277" y="60" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1583787330458" />
-    <state x="465" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1588729584880">
+    <state x="465" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1588902476911">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="465" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1588729584880" />
+    <state x="465" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1588902476911" />
     <state x="578" y="334" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588278960019">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

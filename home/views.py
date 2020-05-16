@@ -13,11 +13,11 @@ from note.models import Note, Category, Images, Comment
 
 def index(request):
     setting = Setting.objects.get(pk=1)
-    sliderdata = Note.objects.all()[:4]
+    sliderdata = Note.objects.filter(status='True')[:4]
     category = Category.objects.all()
-    dayNotes = Note.objects.all()[:5]
-    lastNotes = Note.objects.all().order_by('-id')[:5]
-    randomNote = Note.objects.all().order_by('?')[:4]
+    dayNotes = Note.objects.filter(status='True')[:5]
+    lastNotes = Note.objects.filter(status='True').order_by('-id')[:5]
+    randomNote = Note.objects.filter(status='True').order_by('?')[:4]
     context = {'setting': setting,
                'category': category,
                'page': 'home',
@@ -63,7 +63,7 @@ def contactus(request):
 
 
 def category_notes(request, id, slug):
-    notes = Note.objects.filter(Category_id=id)
+    notes = Note.objects.filter(Category_id=id, status='True')
     category = Category.objects.all()
     categorydata=Category.objects.get(pk=id)
     context = {'notes': notes, 'category': category, 'categorydata':categorydata}

@@ -22,7 +22,7 @@ class Category(MPTTModel):
     status = models.CharField(max_length=10, choices=STATUS)
     image = models.ImageField(blank=True, upload_to='image/')
     slug = models.SlugField(blank=False,unique=True)
-    parent = TreeForeignKey('self', blank=True, null=True, related_name='children', on_delete=models.CASCADE)  # cascad silme işleminde ona bağlı şeylerde silinir
+    parent = TreeForeignKey('self', blank=True, null=True, related_name='children', on_delete=models.CASCADE)
     create_at = models.DateTimeField(auto_now_add=True)
     update_at = models.DateTimeField(auto_now=True)
 
@@ -48,11 +48,13 @@ class Category(MPTTModel):
 
 class Note(models.Model):
     STATUS = (
+        ('New', 'New'),
         ('True', 'true'),
         ('False', 'false')
     )
     #  many to one
     Category = models.ForeignKey(Category, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
     title = models.CharField(blank=True,max_length=100)
     description = models.CharField(blank=True,max_length=255)
     keywords = models.CharField(blank=True,max_length=255)
@@ -113,3 +115,5 @@ class CommentForm(ModelForm):
     class Meta:
         model = Comment
         fields = ['subject', 'comment', 'rate']
+
+

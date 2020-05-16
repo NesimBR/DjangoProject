@@ -9,7 +9,8 @@
     <meta name="description" content="{% block description %}{% endblock %}" />
     <meta name="keywords" content="{% block keywords %}{% endblock %}" />
     <meta name="author" content="Nesim YILDIRIM" />
-    {% block head %} {% include 'head.html' %}{% endblock %}
+    {% include 'head.html' %}
+    {% block head %}{% endblock %}
 </head>
 <body>
 {% block header %}{% include 'header.html' %}{% endblock %}

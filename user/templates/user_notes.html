@@ -1,0 +1,76 @@
+{% extends "homebase.html" %}
+{% block title %}{{ profile.user_name}} comments{% endblock %}
+{% block keywords %}{{ setting.keywords }}{% endblock %}
+{% block description %}{{ setting.description }}{% endblock %}
+
+{% block body %}
+    <div id="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- breadcrumb-->
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="/">Home</a></li>
+                            <li aria-current="page" class="breadcrumb-item active">My Notes</li>
+                        </ol>
+                    </nav>
+                </div>
+
+                {% include 'user_menu.html' %}
+
+
+                <div class="col-lg-9">
+                    <div class="box">
+
+                        <h1><a>Notes</a></h1>
+
+                         <div class="table-responsive">
+                                <table class="table">
+                                 <p class="buttons"><a href="/user/addnote/" class="btn btn-primary">Create new</a></p>
+                            <thead>
+                            {% if messages %}
+                                {% for message in messages %}
+                                    <div id=" sendmessage " class="alert alert-{{ message.tags }}" ROLE="alert">
+                                        {{ message }}
+                                    </div>
+                                {% endfor %}
+                            {% endif %}
+                            <tr>
+                                <th>Image</th>
+                                <th>Title</th>
+                                <th>Type</th>
+                                <th>Status</th>
+                                <th>Date</th>
+                                <th>Edit</th>
+                                <th>Delete</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {% for rs in note %}
+                                <tr>
+                                    <td><a href="/note/{{ rs.id }}/{{ rs.slug }}"><img alt="{{ rs.title }}" src="{{ rs.image.url }}" style="max-height: 75px"></a></td>
+                                    <td nowrap> <a href="/note/{{ rs.id }}/{{ rs.slug }}">{{ rs.title }}</a></td>
+                                    <td>{{ rs.Category.title }}</td>
+                                    <td>{{ rs.status }}</td>
+                                    <td>{{ rs.create_at}}</td>
+                                    <td nowrap><a class="btn btn-primary" href="/user/noteEdit/{{ rs.id }}">Edit</a>
+                                    <td nowrap> <a class="btn btn-danger" href="/user/notedelete/{{ rs.id }}" onclick="return confirm('Will be delete ! Are you sure?')">Delete</a></td>
+
+
+                                </tr>
+                            {% endfor %}
+                            </tbody>
+                        </table>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+{% endblock %}

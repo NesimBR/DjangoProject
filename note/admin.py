@@ -18,7 +18,7 @@ class CategoryAdmin(admin.ModelAdmin):
 
 
 class NoteAdmin(admin.ModelAdmin):
-    list_display = ['title', 'Category', 'image_tag', 'create_at', 'status']
+    list_display = ['title', 'Category','user', 'image_tag', 'create_at', 'status']
     readonly_fields = ('image_tag',)
     list_filter = ['status', 'Category']
     prepopulated_fields = {'slug': ('title',)}

@@ -3,8 +3,9 @@ from django.db import models
 
 # Create your models here.
 from django.forms import ModelForm, forms, TextInput, Select, FileInput
+from django.utils.safestring import mark_safe
 
-from note.models import Note, Category
+from note.models import Note, Category, Images
 
 
 class NoteForm(ModelForm):
@@ -22,3 +23,9 @@ class NoteForm(ModelForm):
             'detail': CKEditorWidget(),
 
         }
+
+
+class NoteImageForm(ModelForm):
+    class Meta:
+        model = Images
+        fields = ['title', 'image']

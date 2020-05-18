@@ -5,9 +5,9 @@ from django.http import HttpResponseRedirect, HttpResponse
 from django.shortcuts import render, redirect
 from django.contrib.auth import update_session_auth_hash
 from home.models import UserProfile
-from note.models import Category, Comment, Note
+from note.models import Category, Comment, Note, Images
 from user.forms import UserUpdateForm, ProfileUpdateForm
-from user.models import NoteForm
+from user.models import NoteForm, NoteImageForm
 
 
 def index(request):
@@ -158,3 +158,31 @@ def noteEdit(request, id):
             'form': form,
         }
         return render(request, 'user_addnote.html', context)
+
+
+def noteaddimage(request,id):
+    if request.method == 'POST':
+        lasturl = request.META.get('HTTP_REFERER')
+        form = NoteImageForm(request.POST,request.FILES)
+        if form.is_valid():
+            data = Images()
+            data.title = form.cleaned_data['title']
+            data.note_id = id
+            data.image = form.cleaned_data['image']
+            data.save()
+            messages.success(request, "Image has been uploaded")
+            return HttpResponseRedirect(lasturl)
+        else:
+            messages.warning(request, "Form ERROR" + str(form.errors))
+            return HttpResponseRedirect(lasturl)
+    else:
+        note = Note.objects.filter(id=id)
+        images = []
+        images = Images.objects.filter(note_id=id)
+        form = NoteImageForm()
+        context = {
+            'note': note,
+            'images': images,
+            'form': form,
+        }
+    return render(request, 'note_gallery.html', context)

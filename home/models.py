@@ -31,6 +31,7 @@ class Setting(models.Model):
     aboutus = RichTextUploadingField(blank=True)
     contactus = RichTextUploadingField(blank=True)
     references =RichTextUploadingField(blank=True)
+    status = models.CharField(max_length=10, choices=STATUS,null=True)
     create_at = models.DateTimeField(auto_now_add=True)
     update_at = models.DateTimeField(auto_now=True)
 
@@ -41,6 +42,7 @@ class Setting(models.Model):
         return mark_safe('<img src="{}" height="50"/>'.format(self.icon.url))
 
     image_tag.short_description = 'Image'
+
 
 class Contactform(models.Model):
     STATUS = (
@@ -61,6 +63,7 @@ class Contactform(models.Model):
     def __str__(self):
         return self.name
 
+
 class ContactFormu( ModelForm ):
     class Meta :
         model = Contactform
@@ -69,8 +72,9 @@ class ContactFormu( ModelForm ):
             'name': TextInput(attrs={'class': 'form-control  span3 form-group', 'id': 'name', 'placeholder': 'Your Name'}),
             'email': TextInput(attrs={'class': 'form-control  span3 form-group', 'id': 'email', 'placeholder': 'Your Email'}),
             'subject': TextInput(attrs={'class': 'form-control span3 form-group', 'id': 'subject', 'placeholder':'Subject'}),
-            'message': Textarea(attrs={'class': 'form-control  span3 margintop10 form-grou', 'style' : 'float:left; position: relative;','placeholder': 'Subject', 'rows': '2'}),
+            'message': Textarea(attrs={'class': 'form-control  span3 margintop10 form-grou', 'style': 'float:left; position: relative;','placeholder': 'Subject', 'rows': '2'}),
         }
+
 
 class UserProfile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
@@ -96,3 +100,19 @@ class UserProfileForm( ModelForm ):
     class Meta :
         model = UserProfile
         fields = ['phone', 'country', 'university', 'department','image']
+
+
+class FAQ(models.Model):
+    STATUS = (
+        ('True', 'true'),
+        ('False', 'false')
+    )
+    question = models.CharField(max_length=150)
+    ordernumber = models.IntegerField()
+    answer = models.TextField(blank=True)
+    status = models.CharField(max_length=10, choices=STATUS)
+    create_at = models.DateTimeField(auto_now_add=True)
+    update_at = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return self.question

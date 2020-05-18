@@ -7,7 +7,7 @@ from django.shortcuts import render
 
 # Create your views here.
 from home.forms import SearchForm, SignUpForm
-from home.models import Setting, Contactform, ContactFormu
+from home.models import Setting, Contactform, ContactFormu, FAQ
 from note.models import Note, Category, Images, Comment
 
 
@@ -150,3 +150,9 @@ def register_view(request):
                 }
     return render(request, 'register.html', context)
 
+
+def faq(request):
+    faq = FAQ.objects.filter( status='True').order_by('ordernumber')
+    category = Category.objects.all()
+    context = {'faq': faq, 'category': category,}
+    return render(request, 'faq.html', context)

@@ -23,13 +23,13 @@
                                 <h5 class="modal-title">Customer login</h5>
                             </div>
                             <div class="modal-body">
-                                 {% if messages %}
-                                {% for message in messages %}
-                                    <div id=" sendmessage " class="alert alert-{{ message.tags }}" ROLE="alert">
-                                        {{ message }}
-                                    </div>
-                                {% endfor %}
-                            {% endif %}
+                                {% if messages %}
+                                    {% for message in messages %}
+                                        <div id=" sendmessage " class="alert alert-{{ message.tags }}" ROLE="alert">
+                                            {{ message }}
+                                        </div>
+                                    {% endfor %}
+                                {% endif %}
                                 <form method="post" action="">
                                     {% csrf_token %}
                                     <div class="form-group">

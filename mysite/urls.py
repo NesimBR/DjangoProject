@@ -32,6 +32,7 @@ urlpatterns = [
     path('contactus/', views.contactus, name='contactus'),
     path('category/<int:id>/<slug:slug>/',views.category_notes,name='category_notes'),
     path('note/<int:id>/<slug:slug>/', views.note_detail, name='note_detail'),
+    path('notes/', views.notes_all, name='notes_all'),
     path('search/', views.note_search, name='note_search'),
     path('search_auto/', views.search_auto, name='search_auto'),
     path('logout/', views.logout_view, name='logout_view'),

@@ -14,9 +14,11 @@ class SignUpForm(UserCreationForm):
     email = forms.EmailField(max_length=200, label='Email :')
     first_name = forms.CharField(max_length=100,help_text='First Name', label='First Name :')
     last_name = forms.CharField(max_length=100,help_text='Last Name', label='Last Name :')
+
     class Meta:
         model = User
-        fields = {'username','email','first_name','last_name','password1','password2'}
+        fields = {'username', 'first_name', 'last_name', 'email', 'password1', 'password2'}
+
 
 
 

@@ -7,7 +7,7 @@ from django.shortcuts import render
 
 # Create your views here.
 from home.forms import SearchForm, SignUpForm
-from home.models import Setting, Contactform, ContactFormu, FAQ
+from home.models import Setting, Contactform, ContactFormu, FAQ, UserProfile
 from note.models import Note, Category, Images, Comment
 
 
@@ -15,9 +15,9 @@ def index(request):
     setting = Setting.objects.get(pk=1)
     sliderdata = Note.objects.filter(status='True')[:4]
     category = Category.objects.all()
-    dayNotes = Note.objects.filter(status='True')[:5]
-    lastNotes = Note.objects.filter(status='True').order_by('-id')[:5]
-    randomNote = Note.objects.filter(status='True').order_by('?')[:4]
+    dayNotes = Note.objects.filter(status='True')[:10]
+    lastNotes = Note.objects.filter(status='True').order_by('-id')[:10]
+    randomNote = Note.objects.filter(status='True').order_by('?')[:6]
     context = {'setting': setting,
                'category': category,
                'page': 'home',
@@ -63,22 +63,31 @@ def contactus(request):
 
 
 def category_notes(request, id, slug):
+    setting = Setting.objects.get(pk=1)
     notes = Note.objects.filter(Category_id=id, status='True')
     category = Category.objects.all()
     categorydata=Category.objects.get(pk=id)
-    context = {'notes': notes, 'category': category, 'categorydata':categorydata}
+    context = {'notes': notes, 'category': category, 'categorydata':categorydata, 'setting': setting,}
     return render(request, 'notes.html', context)
 
+def notes_all(request):
+    setting = Setting.objects.get(pk=1)
+    notes = Note.objects.filter(status='True')
+    category = Category.objects.all()
+    context = {'notes': notes, 'category': category, 'setting': setting}
+    return render(request, 'notes_all.html', context)
 
 def note_detail(request, id, slug):
+    setting = Setting.objects.get(pk=1)
     category = Category.objects.all()
     note = Note.objects.get(pk=id)
     images = Images.objects.filter(note_id=id)
     comments = Comment.objects.filter(note_id=id,status='True')
-    context = {'category': category, 'comments':comments, 'note': note, 'images': images}
+    context = {'category': category, 'comments':comments, 'note': note, 'images': images, 'setting': setting}
     return render(request, 'note_detail.html', context)
 
 def note_search(request):
+    setting = Setting.objects.get(pk=1)
     if request.method == 'POST':
         form = SearchForm(request.POST)
         if form.is_valid():
@@ -86,12 +95,13 @@ def note_search(request):
             query = form.cleaned_data['query']
             catid = form.cleaned_data['catid']
             if catid == 0:
-                notes = Note.objects.filter(title__icontains=query)  # Select * from note where title like %query%
+                notes = Note.objects.filter(title__icontains=query,status='True')  # Select * from note where title like %query%
             else:
-                notes = Note.objects.filter(title__icontains=query, Category_id=catid)   # Select * from note where title like %query%
+                notes = Note.objects.filter(title__icontains=query, Category_id=catid,status='True')   # Select * from note where title like %query%
             context = {'notes': notes,
                        'category': category,
-                       'query': query
+                       'query': query,
+                       'setting': setting
                        }
             return render(request,'note_search.html',context)
     return HttpResponseRedirect('/')
@@ -100,7 +110,7 @@ def note_search(request):
 def search_auto(request):
     if request.is_ajax():
         q = request.GET.get('term', '')
-        notes = Note.objects.filter(title__icontains=q)
+        notes = Note.objects.filter(title__icontains=q,status='True')
         results = []
         for rs in notes:
             note_json = {}
@@ -129,7 +139,8 @@ def login_view(request):
             messages.warning(request, "Failed to Login!")
             return HttpResponseRedirect('/login/')
     category = Category.objects.all()
-    context = { 'category': category}
+    setting = Setting.objects.get(pk=1)
+    context = { 'category': category, 'setting': setting}
     return render(request, 'login.html', context)
 
 
@@ -142,11 +153,19 @@ def register_view(request):
             password = request.POST['password1']
             user = authenticate(request, username=username, password=password)
             login(request, user)
-            return HttpResponseRedirect('/')
+            current_user = request.user
+            data = UserProfile()
+            data.user_id = current_user.id
+            data.image = "image/users/user.png"
+            data.save()
+            messages.success(request, "welcome "+current_user.first_name)
+            return HttpResponseRedirect('/user/update/')
     form = SignUpForm()
     category = Category.objects.all()
+    setting = Setting.objects.get(pk=1)
     context = { 'category': category,
-                'form':form,
+                'form': form,
+                'setting': setting,
                 }
     return render(request, 'register.html', context)
 
@@ -154,5 +173,6 @@ def register_view(request):
 def faq(request):
     faq = FAQ.objects.filter( status='True').order_by('ordernumber')
     category = Category.objects.all()
-    context = {'faq': faq, 'category': category,}
+    setting = Setting.objects.get(pk=1)
+    context = {'faq': faq, 'category': category, 'setting': setting}
     return render(request, 'faq.html', context)

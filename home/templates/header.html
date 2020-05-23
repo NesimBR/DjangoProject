@@ -106,7 +106,6 @@
             <form role="search" class="ml-auto" action="/search/" method="post">
                 {% csrf_token %}
                 <div class="input-group">
-                    <input id="query" type="text" name="query" placeholder="Search" class="form-control">
                     <div class="input-group-append">
 
 
@@ -128,6 +127,11 @@
                             {% endrecursetree %}
                         </select>
                     </div>
+                    <input id="query" type="text" name="query" placeholder="Search" class="form-control">
+                    <div class="input-group-append">
+                        <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button>
+                    </div>
+
                 </div>
             </form>
         </div>

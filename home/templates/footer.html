@@ -10,11 +10,13 @@
                     <li><a href="/contactus">Contact us</a></li>
                 </ul>
                 <hr>
+                {% if user.id is None %}
                 <h4 class="mb-3">User section</h4>
                 <ul class="list-unstyled">
-                    <li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a></li>
-                    <li><a href="#">Regiter</a></li>
+                    <li><a href="/login/">Login</a></li>
+                    <li><a href="/register/">Regiter</a></li>
                 </ul>
+                {% endif %}
             </div>
             <!-- /.col-lg-3-->
             <div class="col-lg-3 col-md-6">
@@ -23,14 +25,7 @@
             {% load mptt_tags %}
             {% recursetree category %}
                 <li><a class="nav-link" >{{ node.title }}</a>
-                    <ul class="list-unstyled">
-                        {% if not node.is_leaf_node %}
-                            {% for i in node.children.all %}
-                                <li><a class="nav-link" href="/category/{{ i.id }}/{{ i.slug }}"> > {{ i.title }}</a></li>
-                            {% endfor %}
 
-                        {% endif %}
-                    </ul>
                 </li>
             {% endrecursetree %}
 
@@ -55,7 +50,7 @@
                 </form>
                 <hr>
                 <h4 class="mb-3">Stay in touch</h4>
-                <p class="social"><a href="https://www.facebook.com/kbubilgisayar" class="facebook external"><i class="fa fa-facebook"></i></a><a href="https://twitter.com/krbkuni" class="twitter external"><i class="fa fa-twitter"></i></a><a href="https://www.instagram.com/karabukuniv/" class="instagram external"><i class="fa fa-instagram"></i></a></p>
+                <p class="social"><a href="{{ setting.facebook }}" class="facebook external"><i class="fa fa-facebook"></i></a><a href="{{ setting.twitter }}" class="twitter external"><i class="fa fa-twitter"></i></a><a href="{{ setting.instagram }}" class="instagram external"><i class="fa fa-instagram"></i></a></p>
             </div>
             <!-- /.col-lg-3-->
         </div>

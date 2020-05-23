@@ -26,6 +26,13 @@
 
                             <h2>UPDATE INFORMATION</h2>
                         <hr>
+                             {% if messages %}
+                            {% for message in messages %}
+                                <div id=" sendmessage " class="alert alert-{{ message.tags }}" ROLE="alert">
+                                    {{ message }}
+                                </div>
+                            {% endfor %}
+                        {% endif %}
                             <form method="post" enctype="multipart/form-data">{% csrf_token %}
 
 

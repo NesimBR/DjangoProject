@@ -56,7 +56,7 @@
                                 <tbody>
                                 {% for rs in note %}
                                     <tr>
-                                        <td><a href="/note/{{ rs.id }}/{{ rs.slug }}"><img alt="{{ rs.title }}" src="{{ rs.image.url }}" style="max-height: 75px"></a></td>
+                                        <td><a href="/note/{{ rs.id }}/{{ rs.slug }}"><img alt="{{ rs.title }}" src="{{ rs.image.url }}" style="max-height: 75px;max-width: 75px"></a></td>
                                         <td> <a href="/note/{{ rs.id }}/{{ rs.slug }}">{{ rs.title }}</a></td>
                                         <td>{{ rs.Category.title }}</td>
                                         <td>{{ rs.status }}</td>

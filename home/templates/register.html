@@ -34,21 +34,18 @@
                                         <div class="form-group">
                                             {{field}}
                                         </div>
-                                            {% if field.help_text %}
-                                                <small style="color: gray">{{ field.help_text }}</small>
-                                            {% endif %}
-                                            {% for error in field.errors %}
-                                                <p style="color: red">{{ error }}</p>
-                                            {% endfor %}
-
+                                        {% if field.help_text %}
+                                            <small style="color: gray">{{ field.help_text }}</small>
+                                        {% endif %}
+                                        {% for error in field.errors %}
+                                            <p style="color: red">{{ error }}</p>
+                                        {% endfor %}
                                         </p>
                                     {% endfor %}
                                     <p class="text-center">
-                                        <button class="btn btn-primary" type="submit" value="Login"><i class="fa fa-user-md"></i> Register</button>
+                                        <button class="btn btn-primary" type="submit" value="Login"><i class="fa fa-user-plus"></i> Register</button>
                                     </p>
-
                                 </form>
-
                             </div>
                         </div>
                     </div>

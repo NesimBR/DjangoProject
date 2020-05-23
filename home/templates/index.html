@@ -10,7 +10,7 @@
        _________________________________________________________
        -->
     <div id="hot">
-        <div class="box py-4">
+        <div class="box py-4" style="background: #555">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -35,7 +35,7 @@
                             <div class="text">
                                 <h3><a href="/note/{{ rs.id }}/{{ rs.slug }}">{{ rs.title }} </a></h3>
                                 <p class="price">
-                                    {{ rs.create_at }}
+                                    {{ rs.user.first_name }} {{ rs.user.last_name}}
                                 </p>
                             </div>
 
@@ -52,7 +52,7 @@
         </div>
     </div>
     <div id="hot">
-        <div class="box py-4">
+        <div class="box py-4" style="background: #555">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -78,7 +78,7 @@
                             <div class="text">
                                 <h3><a href="/note/{{ rs.id }}/{{ rs.slug }}">{{ rs.title }} </a></h3>
                                 <p class="price">
-                                    <del></del>{{ rs.create_at }}
+                                    {{ rs.user.first_name }} {{ rs.user.last_name}}
                                 </p>
                             </div>
                             <!-- /.ribbon-->
@@ -100,9 +100,9 @@
         <!-- *** HOT END ***-->
     </div>
 
-  <div id="hot">
+    <div id="hot">
 
-         <div class="box py-4">
+        <div class="box py-4" style="background: #555">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -121,6 +121,7 @@
                             <a href="/note/{{ rs.id }}/{{ rs.slug }}" class="col-md-3"><img src="{{ rs.image.url }}" alt=""   class="img img-fluid" style="height: 75px"></a>
                             <div class="text">
                                 <h3>{{ rs.title }}</h3>
+                                <p class="price">{{ rs.Category.title }}</p>
 
                             </div>
 

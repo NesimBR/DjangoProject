@@ -12,6 +12,8 @@
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="/">Home</a></li>
+                                <li class="breadcrumb-item"><a href="/notes/">Notes</a></li>
+
                                 <li aria-current="page" class="breadcrumb-item active">{{ categorydata.title }}</li>
                             </ol>
                         </nav>
@@ -41,7 +43,7 @@
                                             <div class="text">
                                                 <h3><a href="/note/{{ rs.id }}/{{ rs.slug }}">{{ rs.title }} </a></h3>
                                                 <p class="price">
-                                                    <del></del>{{ rs.create_at }}
+                                                    {{ rs.user.first_name }} {{ rs.user.last_name}}
                                                 </p>
                                                 <p class="buttons"><a href="/note/{{ rs.id }}/{{ rs.slug }}" class="btn btn-outline-secondary">View detail</a></p>
                                             </div>
